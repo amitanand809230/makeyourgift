@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background -->
+  <rect width="100" height="100" rx="18" fill="#C15127">
+    <animateTransform
+      attributeName="transform"
+      type="scale"
+      from="1"
+      to="1.04"
+      begin="0s"
+      dur="3s"
+      repeatCount="indefinite"
+      direction="alternate"
+    />
+  </rect>
+
+  <!-- Text -->
+  <text
+    x="50%"
+    y="55%"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-size="40"
+    font-weight="700"
+    fill="white"
+    font-family="Arial, Helvetica, sans-serif"
+  >
+    MYG
+    <animate
+      attributeName="opacity"
+      from="1"
+      to="0.85"
+      dur="3s"
+      repeatCount="indefinite"
+      direction="alternate"
+    />
+  </text>
+</svg>

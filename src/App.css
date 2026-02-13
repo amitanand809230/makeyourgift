@@ -1,0 +1,17 @@
+/* 1. Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Manrope:wght@200..800&display=swap');
+
+@import "tailwindcss";
+
+/* 2. Tailwind 4 Theme Registration */
+@theme {
+  --font-atkinson: "Atkinson Hyperlegible Next", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+}
+
+/* 3. Optional Base Default Font */
+@layer base {
+  body {
+    @apply font-atkinson;
+  }
+}
