@@ -8,32 +8,47 @@ const ProductCard = ({
   showCart = false,
 }) => {
   return (
-    <div className="bg-gray-100 rounded-xl shadow-md hover:shadow-lg transition duration-300 p-3 text-left group">
-      <div className="">
-        <div className=" relative overflow-hidden rounded-lg">
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-full rounded-xl hover:scale-105 transition duration-300"
-          />
-        </div>
-        <h3 className="text-gray-500 font-bold truncate w-full">{title}</h3>
-        <div className="flex gap-2 justify-between items-center p-0.5">
-          <p className="text-xl text-green-800 font-medium">₹ {mrp}</p>
-          <p className="text-lg text-red-800 font-light line-through">
-            ₹ {price}
-          </p>
-          <p className="text-sm text-red-500 font-medium bg-orange-300 rounded px-1">
-            {discount}% OFF
-          </p>
-        </div>
-        {showCart && (
-          <button className="w-full mt-2 bg-black text-white py-2 rounded">
-            Add to Cart
-          </button>
-        )}
+    <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-3 text-left group">
+
+      {/* Image */}
+      <div className="relative overflow-hidden rounded-lg aspect-square">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+        />
       </div>
+
+      {/* Title */}
+      <h3 className="mt-2 text-xs sm:text-sm md:text-base font-semibold text-gray-700 line-clamp-2 truncate w-full">
+        {title}
+      </h3>
+
+      {/* Price Section */}
+      <div className="flex items-center justify-between mt-1">
+
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-green-700">
+          ₹ {mrp}
+        </p>
+
+        <p className="text-xs sm:text-sm md:text-base text-gray-500 line-through">
+          ₹ {price}
+        </p>
+
+        <p className="text-[10px] sm:text-xs md:text-sm font-semibold text-red-600 bg-orange-100 rounded px-1">
+          {discount}% OFF
+        </p>
+
+      </div>
+
+      {/* Add to Cart */}
+      {showCart && (
+        <button className="w-full mt-3 bg-black text-white py-2 rounded-lg hover:bg-gray-800 transition">
+          Add to Cart
+        </button>
+      )}
     </div>
   );
 };
+
 export default ProductCard;
