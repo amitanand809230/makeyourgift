@@ -1,4 +1,4 @@
-import hero_gift_hamp from '../assets/images/hero_gift_hamp.jpeg'
+import hero_gift_hamp from '../assets/images/gifthampers/hero_gift_hamp.jpeg'
 import Hero from '../components/Hero'
 import ProductCard from '../components/ProductCard';
 import  gifthampers  from "../data/gifthampers.js";
@@ -9,8 +9,8 @@ const GiftHampers = () => {
       <Hero image={hero_gift_hamp} alt={"Home banner"} link={"/gifthampers"}/>
       <h1
         className="text-sm lg:text-2xl mt-6
-              font-semibold
-              text-black  tracking-wide uppercase mb-6 hover:text-[#C15127]
+              font-semibold text-[#C15127]
+               md:text-black  tracking-wide uppercase mb-6 hover:text-[#C15127]
               transition duration-200"
       >
         Find The Perfect Gift
