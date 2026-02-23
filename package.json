@@ -1,4 +1,6 @@
 {
+  "homepage": "https://amitanand809230.github.io/makeyourgift/",
+
   "name": "make-your-gift",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +9,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.95.3",
@@ -30,6 +34,7 @@
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
+    "gh-pages": "^6.3.0",
     "globals": "^16.5.0",
     "vite": "npm:rolldown-vite@7.2.5"
   },

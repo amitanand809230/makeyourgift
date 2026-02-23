@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    
       <Navbar/>
       <Routes>
          {/* HOME PAGE */}
@@ -37,7 +37,7 @@ function App() {
 
       
       <Footer/>
-      </BrowserRouter>
+      
       
     </>
   )

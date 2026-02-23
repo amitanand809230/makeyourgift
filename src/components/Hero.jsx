@@ -1,20 +1,16 @@
-import React from "react";
-import hero from "../assets/hero_icon.webp";
 import { Link } from "react-router-dom";
-
-const Hero = () => {
+const Hero = ({ image, alt ="Hero banner", link}) => {
   return (
     <section className="w-full mt-2 ">
-
       <div className="
-        max-w-400 mx-auto
+        max-w-[1600] mx-auto
         overflow-hidden
-        
+
       ">
-       <Link to="/gifthampers">
+       <Link to={link}>
         <img
-          src={hero}
-          alt="Hero"
+          src={image}
+          alt={alt}
           className="
             w-full
             min-h-full
@@ -24,18 +20,13 @@ const Hero = () => {
             border border-[#C15127]
             hover:scale-105
             transition-transform ease-out duration-300
-            
           "
         />
         </Link>
       </div>
-
-    </section>
-
-    
+    </section>   
   );
 };
-
 
 export default Hero;
 

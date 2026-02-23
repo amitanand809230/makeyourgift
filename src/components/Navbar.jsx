@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <>
       {/* Header */}
-      <header className="flex flex-col font-atkinson justify-between items-center sticky top-0 z-50 bg-white px-3 sm:px-5 py-2 shadow-sm md:shadow-md lg:shadow-lg">
+      <header className="flex flex-col font-atkinson justify-between items-center sticky top-0 z-50 bg-white px-3 sm:px-5 py-2 shadow-sm">
         <div className="flex items-center gap-3">
           {/* HAMBURGER (sm → <lg) */}
           <button
