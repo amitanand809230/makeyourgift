@@ -1,11 +1,11 @@
 import hero_gift_hamp from '../assets/images/gifthampers/hero_gift_hamp.jpeg'
 import Hero from '../components/Hero'
-import ProductCard from '../components/ProductCard';
-import  gifthampers  from "../data/gifthampers.js";
+  import ProductCard from '../components/ProductCard';
+  import  gifthampers  from "../data/gifthampers.js";
 const GiftHampers = () => {
   return (
     <>
-    <div className='font-atkinson mx-auto m-6 text-center'>
+    <div className='font-atkinson mx-auto m-2 text-center'>
       <Hero image={hero_gift_hamp} alt={"Home banner"} link={"/gifthampers"}/>
       <h1
         className="text-sm lg:text-2xl mt-6
